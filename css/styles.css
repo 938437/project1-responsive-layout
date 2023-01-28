@@ -1,0 +1,239 @@
+:root {
+    --background-gray: #f8f8f8;
+    --thingsofabove-blue: #19b2de;
+    --add-blue : #30bae1;
+    --tab-green: #25c389;
+    --tab-red: #de6262;
+    --tab-yellow: #ffb901;
+    --purple: #872b9a;
+    --footer: #16242f;
+    --facebook-blue: #527cc4;
+    --google-red: #e46145;
+    --twitter-blue: #00b0e2;
+    --pink : #f6679c;
+    --wifi-yellow: #fea501;
+    --footer-lightblue: #1691bd;
+    --footer-darkblue: #166ba2;
+    --twitter-background-gray: #5c666f;
+    --white: #ffffff;
+    --border-gray: #e8e8e8;
+
+    --font-black: #494949;
+    --font-lightgray: #a2a2a2;
+    --font-darkgray: #8a8a8a;
+
+    --font-family-Ubuntu: Ubuntu;
+    --font-family-Open-Sans: Open Sans;
+}
+
+.our-lastest-project {
+    display: flex;
+    flex-direction: column;
+    width: 61.563em;
+    margin:0 auto;
+}
+
+.our-lastest-project > h1 {
+    font-family: var(--font-family-Ubuntu);
+    color: var(--font-black);
+    padding-top: 3.563em;
+    text-align: center;
+}
+
+.our-lastest-project > p {
+    font-family: var(--font-family-Open-Sans);
+    color: var(--font-lightgray);
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.our-latest-projects-images > img {
+    width: 18.75em;
+    height: 13.125em;
+}
+.our-latest-projects-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.625em;
+    margin:0 auto;
+}
+
+.thingsfabove {
+    display: flex;
+    flex-direction: column;
+    width: 61.563em;
+    margin:0 auto;
+}
+
+.thingsfabove > h1 {
+    font-family: var(--font-family-Ubuntu);
+    color: var(--font-black);
+    padding-top: 3.563em;
+    text-align: center;
+}
+
+.thingsfabove > p {
+    font-family: var(--font-family-Open-Sans);
+    color: var(--font-lightgray);
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.thingsfabove-box {
+    display: flex;
+}
+
+.accordion-menu {
+    width: 29.125em;
+    padding-left: 0.813em;
+}
+
+.menu-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.web-solution-menu {
+    display: flex;
+    /* width: 29.125em;
+    height: 2.625em; */
+    justify-content: space-between;
+    background-color: var(--thingsofabove-blue);
+}
+
+.web-solution-menu > i {
+    padding: 1.5em;
+    background-color: var(--add-blue);
+    color: var(--white);
+}
+
+.web-solution-menu > h4 {
+    color: var(--white);
+    padding-left: 1.25em;
+    /* padding-bottom: 0.813em; */
+}
+
+.web-solution-menu > .add {
+    width: 2.625em;
+    height: 2.625em;
+    background-color: var(--add-blue);
+    margin-left: 14em;
+}
+.web-solution-menu > .add > i {
+    font-size: 1.3em;
+    color: var(--white);
+    padding-left: 0.6em;
+    padding-top: 0.5em;
+}
+
+.menu-open {
+    display: flex;
+    height: 8.313em;
+    width: 29.125em;
+    background-color: var(--background-gray);
+    border: bold 0.1em var(--border-gray);
+}
+
+.menu-open > i {
+    background-color: var(--tab-green);
+    padding: 0.5em;
+}
+
+.menu-open-icon > i {
+    color: var(--white);
+    font-size: 2.5em;
+}
+
+.web-soultion {
+    width: 20.625em;
+}
+
+.web-solution > p {
+    font-size: 12px;
+    color: var(--font-darkgray);
+}
+
+.Tab {
+    margin-left: 1.625em;
+}
+
+.Tab > button {
+    font-family: var(--font-family-Ubuntu);
+}
+
+.tab-1 {
+    float: left;
+    width: 5em;
+    height: 2.8em;
+    background-color: var(--white);
+    border-bottom: none;
+    border-top: solid var(--border-gray);
+    border-left: solid var(---border-gray);
+    border-right: solid var(--border-gray);
+}
+
+.tab {
+    margin-left:-0.48em;
+    width: 5em;
+    height: 2.625em;
+    border: solid 1em var(---border-gray);
+}
+
+.tab-open {
+    display: flex;
+    flex-direction: column;
+    border: solid 0.1em var(--border-gray);
+    height: 14.563em;
+    width: 29.125em;
+}
+
+.tab-open-content {
+    display: flex;
+    height: 3.64em;
+    margin-left: 1.438em;
+}
+
+.tab-open-content > div {
+    margin-top: 1em;
+    width: 2.188em;
+    height: 2.188em;
+}
+
+.tab-open-icon-red {
+    background-color: var(--tab-red);
+    padding: 0.625em;
+    width: 2.125em;
+    height: 2.125em;
+}
+
+.tab-open-content > p {
+    font-size: 12px;
+    color: var(--font-darkgray);
+}
+
+.company-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 3.75em;
+    margin: 0 auto;
+    width: 59.875em;
+    height: 14.625em;
+}
+.company-images > img {
+    width: 10.75em;
+    height: 7.375em;
+    gap: 1.75em;
+}
+
+footer {
+    height: 30.938em;
+    background: var(--footer);
+}
+
+.peewee-herman > img {
+    width: 4.375em;
+    height: 4.375em;
+    border-radius: 50%;
+}
