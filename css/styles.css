@@ -12,7 +12,7 @@
     --twitter-blue: #00b0e2;
     --pink : #f6679c;
     --wifi-yellow: #fea501;
-    --footer-lightblue: #1691bd;
+    --footer-cyan: #1691bd;
     --footer-darkblue: #166ba2;
     --twitter-background-gray: #5c666f;
     --white: #ffffff;
@@ -131,7 +131,7 @@ html, body {
 
 .menu-open > i {
     background-color: var(--tab-green);
-    padding: 0.6em;
+    padding: 0.5em;
     margin: 1em;
     font-size: 3em;
     color: var(--white);
@@ -257,7 +257,6 @@ footer {
     flex-direction: column;
     width: 59.875em;
     margin: 0 auto;
-    padding-bottom: 5em;
 }
 
 .peewee-herman {
@@ -322,7 +321,7 @@ footer {
 .hr-blue {
     border: none;
     height: 0.05em;
-    background-color: var(--footer-lightblue);
+    background-color: var(--footer-cyan);
 }
 
 .footer-box {
@@ -419,4 +418,35 @@ footer {
     background-color: var(--tab-yellow);
     padding: 0.8em;
     color: var(--white);
+}
+
+.others {
+    display: flex;
+    margin-top: 4em;
+}
+
+.colors-green {
+    padding: 1em 3em;
+    margin-left: 31.5em;
+    background-color: var(--tab-green);
+}
+
+.colors-yellow {
+    padding: 1em 3em;
+    background-color: var(--tab-yellow);
+}
+
+.colors-red {
+    padding: 1em 3em;
+    background-color: var(--tab-red);
+}
+
+.colors-cyan {
+    padding: 1em 3em;
+    background-color: var(--footer-cyan);
+}
+
+.colors-blue {
+    padding: 1em 3em;
+    background-color: var(--footer-darkblue);
 }
