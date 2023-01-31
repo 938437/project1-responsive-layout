@@ -13,32 +13,58 @@
     <!-- Andrea's Codes -->
     <header class="page_header">
         <nav class="navigation--bar">
-            <div class="page--logo">Logo</div>
+            <img class="page-logo" src="./img/best-friend-cats.jpg"/>
             <div class="navbar--icons">
-                <a class="home--icon fa fa-home">Home</a>
-                <a class="pages--icon fa fa-sitemap">Pages</a>
-                <a class="blog--icon fa fa-bullhorn">Blog</a>
-                <a class="portfolio--icon fa fa-briefcase">Portfolio</a>
-                <a class="email--icon fa fa-envelope">Email</a>
+                <a class="navbar--icon--type home--icon" href="#">
+                    <i class="navbar--icon--image fa fa-home"></i>
+                    <p class="navbar--icon--text">Home</p>
+                </a>
+                <a class="navbar--icon--type--with--arrow page--icon" href="#">
+                    <i class="navbar--icon--image fa fa-sitemap"></i>
+                    <div class="navbar--icon--text--with--arrow">
+                        <p class="navbar--icon--text">Pages</p>
+                        <i class="fa fa-chevron-right navbar--icon--arrow"></i>
+                    </div>
+                </a>
+                <a class="navbar--icon--type--with--arrow blog--icon" href="#">
+                    <i class="navbar--icon--image fa fa-bullhorn"></i>
+                    <div class="navbar--icon--text--with--arrow">
+                        <p class="navbar--icon--text">Blog</p>
+                        <i class="fa fa-chevron-right navbar--icon--arrow"></i>
+                    </div>
+                </a>
+                <a class="navbar--icon--type--with--arrow portfolio--icon" href="#">
+                    <i class="navbar--icon--image fa fa-briefcase"></i>
+                    <div class="navbar--icon--text--with--arrow">
+                        <p class="navbar--icon--text">Portfolio</p>
+                        <i class="fa fa-chevron-right navbar--icon--arrow"></i>
+                    </div>
+                </a>   
+                <a class="navbar--icon--type email--icon" href="#">
+                    <i class="navbar--icon--image fa fa-envelope"></i>
+                    <p class="navbar--icon--text">Email</p>
+                </a>
             </div>
         </nav>
     </header>
     <div class="carousel--images">
-        <img src="display-img" alt="">
-        <i class="previous--image--arrow fa fa-chevron-left"></i>
+        <img class="display-img" src="./img/cats-with-paws.jpeg" alt="cats-with-paws">
         <div class="slides-images-info">
-            <p class="images-text">Metro Style</p>
-            <p class="images-text">Retina Ready</p>
-            <p class="images-text">Responsive Design</p>
+            <p class="carousel-images-text carousel-images-text-border-metro">Metro Style</p>
+            <p class="carousel-images-text carousel-images-text-border-retina">Retina Ready</p>
+            <p class="carousel-images-text carousel-images-text-border-responsive">Responsive Design</p>
         </div>
-        <i class="next--image--arrow fa fa-chevron-right"></i>
+        <i class="previous--image image--arrow fa fa-chevron-left"></i>
+        <i class="next--image image--arrow fa fa-chevron-right"></i>
     </div>
-    <h4>Hey Guy! This is the <span>Metrolics</span> theme.</h4>
-    <h4>It sports a responsive layout with a mobile layout.</h4>
-    <div>
-        <h5>Things That We Do</h5>
-        <p>Ask us what we can do for you</p>
-        <div>
+    <div class="page-theme">
+    <p class="page-theme-text">Hey Guy! This is the <span class="page-theme-text-highlight">Metrolics</span> theme.</p>
+    <p class="page-theme-text">It sports a responsive layout with a mobile layout.</p>        
+    </div>
+    <div class="things-that-we-do">
+        <p class="things-that-we-do-main-text">Things That We Do</p>
+        <p class="things-that-we-do-secondary-text">Ask us what we can do for you</p>
+        <div class="page-services">
             <div>
                 <i class="web--solution--icon fa fa-lightbulb-o">Web Solutions</i>
                 <p>
@@ -107,7 +133,6 @@
             <div class="line"></div>
         </div>
     </div>
-
 
 
 
