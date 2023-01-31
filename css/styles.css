@@ -24,20 +24,178 @@
 
     --font-family-Ubuntu: Ubuntu;
     --font-family-Open-Sans: Open Sans;
+    --font-family-sans-serif: sans-serif;
+    --font-family-fantasy: fantasy;
 
     --font-size-12px: 12px;
     --font-size-14px: 14px;
     --font-size-10px: 10px;
+
+    --max-width: 60em;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-sans-serif);
+}
+
+/* Andrea's code */
+
+/* NavBar */
+.page_header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navigation--bar {
+    width: 55%;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+}
+.page-logo {
+    display: flex;
+    width: 15em;
+}
+.navbar--icons {
+    display: flex;
+}
+.navbar--icon--image {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    background-color: #ffffff4a;
+    padding: 0.3em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+.navbar--icon--type, .navbar--icon--type--with--arrow {
+    padding: 1.5em 2.5em;
+    position: relative;
+    color: var(--white);
+    text-decoration: none;
+    transition: transform .2s;
+}
+.navbar--icon--type:hover, .navbar--icon--type--with--arrow:hover {
+    opacity: 0.6;
+}
+.navbar--icon--text {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    margin: 0;
+    font-size: 0.9em;
+}
+.navbar--icon--text--with--arrow {
+    display: flex;
+}
+.navbar--icon--arrow {
+    position: absolute;
+    bottom: 1.3em;
+    right: 1.3em;
+    font-size: 0.7em;
+}
+.home--icon {
+    background: var(--tab-green);
+}
+.page--icon {
+    background-color: var(--tab-yellow);
+}
+.blog--icon {
+    background-color: var(--tab-red);
+}
+.portfolio--icon {
+    background-color: var(--footer-cyan);
+}
+.email--icon {
+    background-color: var(--footer-darkblue);
+}
+
+/* Carousel Images */
+.carousel--images {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.display-img{
+    width: 60em;
+}
+.slides-images-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    position: absolute;
+    top: 65%;
+    left: 18%;
+}
+.carousel-images-text {
+    margin: 0;
+    background-color: var(--background-gray);
+    padding: 0.5em;
+    width: fit-content;
+}
+.carousel-images-text-border-metro {
+    border-left: 5px solid var(--footer-darkblue);
+}
+.carousel-images-text-border-retina {
+    border-left: 5px solid var(--tab-red);
+}
+.carousel-images-text-border-responsive {
+    border-left: 5px solid var(--tab-yellow);
+}
+.image--arrow {
+    position: absolute;
+    top: 50%;
+    padding: 0.3em 0.4em;
+    border: 2px solid black;
+    border-radius: 3em;
+    cursor: pointer;
+}
+.previous--image {
+    left: 12%;
+}
+.next--image {
+    right: 12%;
+}
+
+/* Page Theme Text */
+.page-theme {
+    margin-top: 3em;
+}
+.page-theme-text {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: var(--font-family-fantasy);
+}
+.page-theme-text-highlight {
+    color: var(--footer-cyan);
+}
+
+/* Things That We Do */
+.things-that-we-do {
+    margin-top: 3em;
+    text-align: center;
+}
+.things-that-we-do-main-text {
+    margin: 0;
+}
+.things-that-we-do-secondary-text {
+    margin: 0;
+    font-size: 0.5em;
+    color: var(--font-darkgray);
+}
+.page-services {
+    display: flex;
+}
+
+
 
 
 /* Yanjun's Codes */
 
 /* Large and up */
-html, body {
-    margin: 0;
-    padding: 0;
-}
 .our-lastest-project {
     display: flex;
     flex-direction: column;
