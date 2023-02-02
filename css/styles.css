@@ -221,6 +221,7 @@ html, body {
 .our-latest-projects-images > img {
     width: 18.75em;
     height: 13.125em;
+    object-fit: cover;
 }
 .our-latest-projects-images {
     display: grid;
@@ -400,13 +401,14 @@ html, body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 3.75em;
     padding-left: 1.3em;
+    justify-content: space-between;
     margin: 0 auto;
     width: 60em;
-    gap: 1em;
 }
 .company-images > img {
     width: 10.75em;
     height: 7.375em;
+    object-fit: cover;
 }
 
 footer {
@@ -430,6 +432,7 @@ footer {
     height: 4.375em;
     border-radius: 50%;
     margin: 2em;
+    object-fit: cover;
 }
 
 .peewee-herman-content {
@@ -455,7 +458,7 @@ footer {
 
 .footer-part2 {
     display: flex;
-    margin-top: 3em;
+    justify-content: space-between;
 }
 
 .footer-box > hr {
@@ -528,6 +531,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 3em;
     gap: 0.4em;
+    object-fit: cover;
 }
 
 .flickr-photos-images > img {
@@ -660,6 +664,7 @@ footer {
     .company-images > img {
         width: 6.688em;
         height: 4.688em;
+        object-fit: cover;
     }
 
     .footer-big-box {
@@ -730,24 +735,23 @@ footer {
         display: none;
     }
 
-    .page_footer {
-        width: 43.75em;
-    }
-
     .footer-big-box {
         display: flex;
         flex-direction: column;
         width: 25em;
+        margin: 0 auto;
     }
 
     .peewee-herman {
         display: flex;
+        margin-top: 2em;
     }
 
     .peewee-herman > img {
         width: 11em;
         height: 11em;
         border-radius: 50%;
+        object-fit: cover;
     }
 
     .peewee-herman-content {
@@ -765,6 +769,7 @@ footer {
     .footer-part2 {
         display: flex;
         flex-direction: column;
+        margin-top: 2em;
     }
     
     .box-1 > h3 {
