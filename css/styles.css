@@ -63,6 +63,9 @@ html, body {
     display: flex;
     width: 15em;
 }
+.menu-icon {
+    display: none;
+}
 .navbar--icons {
     display: flex;
 }
@@ -208,7 +211,11 @@ html, body {
 .page-services-table {
     display: flex;
     max-width: 60em;
-    gap: 1.5em;
+    gap: 1em;
+}
+.page-services-table-section {
+    display: flex;
+    gap: 1em;
 }
 .page-services-table p {
     line-height: 1.5em;
@@ -217,7 +224,7 @@ html, body {
 .page-services-table h5 {
     margin: 1.5em auto;
 }
-.page-services-icons i {
+.page-services-table-section i {
     font-size: 2em;
 }
 .web-solution-icon {
@@ -256,13 +263,15 @@ html, body {
     color: var(--font-darkgray);
 }
 .whats-up-lately-display img {
-    width: 19em;
-    /* height: 15em; */
+    width: 18.8em;
 }
 .whats-up-lately-info {
     display: flex;
     justify-content: center;
     margin-top: 4em;
+}
+.whats-up-lately-sample {
+    display: none;
 }
 .whats-up-lately-info-table {
     display: flex;
@@ -270,6 +279,14 @@ html, body {
     max-width: 60em;
     position: relative;
     height: 14em;
+}
+.whats-up-lately-info-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+.whats-up-lately-mobile-table-size {
+    display: none;
 }
 .whats-up-lately-date {
     position: absolute;
@@ -286,7 +303,7 @@ html, body {
     margin: 0.1em 0 0 0;
     font-size: 0.5em;
 }
-.whats-up-image-footer {
+.whats-up-image-footer-top, .whats-up-image-footer-bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -323,13 +340,190 @@ html, body {
     position:relative;
     height:2px;
 }
-.whats-up-lately-line-two-color::before {
+.whats-up-lately-line-two-color::after {
     content:'';
     background: var(--footer-cyan);
     width:30%;
     height:2px;
     position: absolute;    
 }
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    /* NavBar */
+    .page-logo {
+        width: 14em;
+    }
+    .navbar--icon--type, .navbar--icon--type--with--arrow {
+        padding: 1em 1.9em;
+    }
+    /* Carousel */
+    .display-img {
+        max-width: 48em;
+    }
+    .slides-images-info {
+        font-size: 0.7em;
+        left: 24em;
+        bottom: 1em;
+    }
+    .next--image {
+        right: 8em;
+    }
+    .previous--image {
+        left: 8em;
+    }
+    /*  */
+    .page-theme {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-theme-second-paragraph {
+        max-width: 15em;
+    }
+    .page-services-table-section {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .page-services-table {
+        max-width: 37.5em;
+    }
+    /* What's Up Lately */
+    .whats-up-lately-info-table {
+        flex-direction: column;
+        max-width: 37.5em;
+    }
+    .whats-up-lately-display img {
+        width: 17.5em;
+    }
+    .whats-up-image-footer-desktop-size, .whats-up-lately-desktop-size {
+        display: none;
+    }
+    .whats-up-lately-mobile-table-size {
+        display: block;
+        width: 17.5em;
+        background-color: var(--footer-cyan);
+    }
+    .whats-up-image-footer-top {
+        width: 16.5em;
+    }
+    .whats-up-image-footer-bottom {
+        bottom: -15em;
+        width: 16.5em;
+    }
+    .whats-up-lately-line {
+        margin-top: 17em;
+    }
+    .whats-up-lately-line-two-color {
+        width: 37.5em;
+    }
+    .whats-up-lately-info-table {
+        height: 13em;
+    }
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    /* navbar */
+    .navigation--bar {
+        width: 55%;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 2em;
+        padding: 1em;
+        color: var(--footer-cyan);
+        cursor: pointer;
+    }
+    .navbar--icons {
+        display: none;
+    }
+    /* carousel image */
+    .carousel--images {
+        display: none;
+    }
+    /*  */
+    .page-services {
+        width: 100%;
+    }
+    .page-services-table {
+        max-width: 20em;
+    }
+    .page-theme {
+        text-align: -webkit-center;
+        margin-top: 1.5em;
+    }
+    .page-theme-text {
+        max-width: 12em;
+    }
+    .page-theme-second-paragraph {
+        max-width: 14em;
+    }
+    .page-services-table {
+        flex-direction: column;
+    }
+    .page-services-table-section {
+        flex-direction: column;
+    }
+    .page-services-icon-and-text {
+        display: flex;
+        align-items: flex-start;
+    }
+    .page-services-text {
+        text-align: initial;
+        margin-left: 1em;
+    }
+    .page-services-text h5 {
+        margin: 0;
+    }
+    .whats-up-image-footer-desktop-size {
+        display: flex;
+        width: 17.5em;
+    }
+    .whats-up-lately-desktop-size {
+        display: block;
+    }
+    .whats-up-lately-info-section {
+        flex-direction: column;
+    }
+    .whats-up-lately-mobile-table-size {
+        display: flex;
+    }
+    .whats-up-image-footer-mobile-size {
+        bottom: -15.5em;
+    }
+    .whats-up-image-footer-bottom-mobile-size-first {
+        bottom: -30.5em;
+    }
+    .whats-up-image-footer-bottom-mobile-size-second {
+        bottom: -46em;
+    }
+    .whats-up-lately-info-table {
+        flex-direction: column;
+        height: 14em;
+        max-width: 19em;
+    }
+    .whats-up-lately-display img {
+        width: 100%;
+    }
+    .whats-up-image-footer-top, .whats-up-image-footer-bottom {
+        width: 18em;
+    }
+    .whats-up-lately-line {
+        margin-top: 48em;
+    }
+    .whats-up-lately-line-two-color {
+        width: 19em;
+    }
+    
+}
+
+
+
+
+
+
+
 
 /* Yanjun's Codes */
 
