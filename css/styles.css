@@ -17,6 +17,11 @@
     --twitter-background-gray: #5c666f;
     --white: #ffffff;
     --border-gray: #e8e8e8;
+    --light-blue: #a2d3f2;
+    --light-red: #eda1a1;
+    --light-yellow: #fbda84;
+    --dark-cyan: #0c647e;
+
 
     --font-black: #494949;
     --font-lightgray: #a2a2a2;
@@ -25,7 +30,7 @@
     --font-family-Ubuntu: Ubuntu;
     --font-family-Open-Sans: Open Sans;
     --font-family-sans-serif: sans-serif;
-    --font-family-fantasy: fantasy;
+    --font-family-revert: revert;
 
     --font-size-12px: 12px;
     --font-size-14px: 14px;
@@ -49,7 +54,7 @@ html, body {
     justify-content: center;
 }
 .navigation--bar {
-    width: 55%;
+    width: 60%;
     max-width: var(--max-width);
     display: flex;
     justify-content: space-between;
@@ -119,30 +124,33 @@ html, body {
     position: relative;
 }
 .display-img{
-    width: 60em;
+    width: 100%;
+    max-width: 60em;
 }
 .slides-images-info {
     display: flex;
     flex-direction: column;
     gap: 0.1em;
     position: absolute;
-    top: 65%;
-    left: 18%;
+    left: 24em;
+    bottom: 0em;
 }
 .carousel-images-text {
     margin: 0;
-    background-color: var(--background-gray);
     padding: 0.5em;
     width: fit-content;
 }
 .carousel-images-text-border-metro {
     border-left: 5px solid var(--footer-darkblue);
+    background-color: var(--light-blue);
 }
 .carousel-images-text-border-retina {
     border-left: 5px solid var(--tab-red);
+    background-color: var(--light-red);
 }
 .carousel-images-text-border-responsive {
     border-left: 5px solid var(--tab-yellow);
+    background-color: var(--light-yellow);
 }
 .image--arrow {
     position: absolute;
@@ -153,21 +161,25 @@ html, body {
     cursor: pointer;
 }
 .previous--image {
-    left: 12%;
+    left: 12em;
 }
 .next--image {
-    right: 12%;
+    right: 12em;
+}
+
+.previous--image:hover, .next--image:hover {
+    opacity: 0.6;
 }
 
 /* Page Theme Text */
 .page-theme {
-    margin-top: 3em;
+    margin-top: 5em;
 }
 .page-theme-text {
     margin: 0;
     text-align: center;
     font-size: 1.5em;
-    font-family: var(--font-family-fantasy);
+    font-family: var(--font-family-revert);
 }
 .page-theme-text-highlight {
     color: var(--footer-cyan);
@@ -180,18 +192,144 @@ html, body {
 }
 .things-that-we-do-main-text {
     margin: 0;
+    font-size: 1.3em;
+    font-family: var(--font-family-revert);
 }
 .things-that-we-do-secondary-text {
     margin: 0;
-    font-size: 0.5em;
+    font-size: 0.7em;
     color: var(--font-darkgray);
 }
 .page-services {
     display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.page-services-table {
+    display: flex;
+    max-width: 60em;
+    gap: 1.5em;
+}
+.page-services-table p {
+    line-height: 1.5em;
+    font-size: 0.7em;
+}
+.page-services-table h5 {
+    margin: 1.5em auto;
+}
+.page-services-icons i {
+    font-size: 2em;
+}
+.web-solution-icon {
+    border: 2px solid var(--tab-yellow);
+    padding: 0.3em 0.6em;
+    color: var(--tab-yellow);
+}
+.photography-icon {
+    border: 2px solid var(--tab-green);
+    padding: 0.3em;
+    color: var(--tab-green);
+}
+.web-developement-icon {
+    border: 2px solid var(--tab-red);
+    padding: 0.3em;
+    color: var(--tab-red);
+}
+.web-design-icon {
+    border: 2px solid var(--footer-darkblue);
+    padding: 0.3em 0.4em;
+    color: var(--footer-darkblue);
 }
 
+/* What's Up Lately  */
+.whats-up-title {
+    text-align: center;
+    margin: 2em 0em 0.3em 0em;
+    font-size: 1.3em;
+    font-family: var(--font-family-revert);
+}
 
-
+.whats-up-text {
+    text-align: center;
+    margin: 0;
+    font-size: 0.7em;
+    color: var(--font-darkgray);
+}
+.whats-up-lately-display img {
+    width: 19em;
+    /* height: 15em; */
+}
+.whats-up-lately-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+.whats-up-lately-info-table {
+    display: flex;
+    gap: 1.5em;
+    max-width: 60em;
+    position: relative;
+    height: 14em;
+}
+.whats-up-lately-date {
+    position: absolute;
+    background-color: var(--tab-red);
+    text-align: center;
+    padding: 0.3em;
+    color: var(--white);
+}
+.release-img-date {
+    margin: 0;
+    font-size: 0.9em;
+}
+.release-image-month-year {
+    margin: 0.1em 0 0 0;
+    font-size: 0.5em;
+}
+.whats-up-image-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--footer-cyan);
+    padding: 0.5em;
+    align-items: center;
+    position: absolute;
+    bottom: 0em;
+    width: 18.1em;
+    color: var(--white);
+}
+.whats-up-image-text {
+    margin: 0;
+    font-size: 0.9em;
+}
+.whats-up-image-type {
+    margin: 0;
+    font-size: 0.7em;
+}
+.whats-up-camera-icon {
+    background-color: var(--dark-cyan);
+    padding: 0.5em;
+    font-size: 0.8em;
+}
+.whats-up-lately-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.whats-up-lately-line-two-color {
+    width: 60em;
+    background:var(--border-gray);
+    position:relative;
+    height:2px;
+}
+.whats-up-lately-line-two-color::before {
+    content:'';
+    background: var(--footer-cyan);
+    width:30%;
+    height:2px;
+    position: absolute;    
+}
 
 /* Yanjun's Codes */
 
@@ -206,7 +344,7 @@ html, body {
 .our-lastest-project > h1 {
     font-family: var(--font-family-Ubuntu);
     color: var(--font-black);
-    padding-top: 3.563em;
+    padding-top: 1.3em;
     text-align: center;
 }
 
