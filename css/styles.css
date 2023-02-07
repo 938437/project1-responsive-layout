@@ -357,14 +357,15 @@ html, body {
 }
 
 .our-latest-projects-images > img {
-    width: 18.75em;
+    width: 18.9em;
     height: 13.125em;
     object-fit: cover;
 }
+
 .our-latest-projects-images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.625em;
+    gap: 1.7em;
     margin:0 auto;
 }
 
@@ -392,10 +393,6 @@ html, body {
 
 .thingsfabove-box {
     display: flex;
-}
-
-.accordion-menu {
-    padding-left: 0.813em;
 }
 
 .menu-1 {
@@ -538,13 +535,13 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 3.75em;
-    padding-left: 1.3em;
     justify-content: space-between;
+    gap: 1em;
     margin: 0 auto;
     width: 60em;
 }
 .company-images > img {
-    width: 10.75em;
+    width: 11.22em;
     height: 7.375em;
     object-fit: cover;
 }
@@ -597,6 +594,7 @@ footer {
 .footer-part2 {
     display: flex;
     justify-content: space-between;
+    gap: 1.5em;
 }
 
 .footer-box > hr {
@@ -623,7 +621,6 @@ footer {
 
 .footer-box {
     color: var(--white);
-    margin-right: 2em;
 }
 
 .footer-box > h3 {
@@ -728,7 +725,7 @@ footer {
 } 
 
 .colors-green {
-    margin-left: 31.5em;
+    margin-left: 30em;
     background-color: var(--tab-green);
 }
 
@@ -766,6 +763,12 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
+    .our-latest-projects-images > img {
+        width: 17.9em;
+        height: 13.125em;
+        object-fit: cover;
+    }
+
     .thingsfabove {
         width: 37.5em;
     }
@@ -784,7 +787,7 @@ footer {
 
     .Tab {
         margin-top: 3em;
-        margin-left: 0.6em;
+        margin-left: 0;
     }
 
     .tab-open {
@@ -796,12 +799,11 @@ footer {
 
     .company-images {
         width: 37.5em;
-        display: grid;
     }
 
     .company-images > img {
-        width: 6.688em;
-        height: 4.688em;
+        width: 6.71em;
+        height: 4.7em;
         object-fit: cover;
     }
 
@@ -826,14 +828,12 @@ footer {
 
     .footer-box {
         margin-top: 3em;
-        margin-right: 4em;
     }
 
     .footer-box > hr {
         width: 17.75em;
         border: none;
         height: 0.07em;
-        margin-left: -0.1em;
     }
 
     .flickr-photos-images > img {
@@ -842,7 +842,7 @@ footer {
     }
 
     .colors-green {
-        margin-left: 9.4em;
+        margin-left: 7.6em;
         background-color: var(--tab-green);
     }
 }
@@ -864,6 +864,12 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .our-latest-projects-images > img {
+        width: 25em;
+        height: 13.125em;
+        object-fit: cover;
+}
 
     .thingsfabove {
         display: none;
@@ -950,8 +956,12 @@ footer {
         font-family: var(--font-family-Open-Sans);
     }
 
+    .others > div{
+        padding: 1em 2.5em;
+    }
+
     .colors-green {
-        margin-left: -3em;
+        margin-left: 0;
         background-color: var(--tab-green);
     }
 }
